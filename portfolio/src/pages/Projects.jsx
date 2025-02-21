@@ -47,7 +47,7 @@ const Projects = () => {
   }
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-gray-900 text-white px-6">
+    <div className="min-h-screen flex flex-col items-center justify-center bg-gray-900 text-white px-6 mt-16">
       {/* Title */}
       <h1 className="text-4xl font-bold text-center mb-8">{project.title}</h1>
 

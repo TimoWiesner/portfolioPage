@@ -1,6 +1,6 @@
 const CV = () => {
     return (
-      <div className="min-h-screen bg-gray-900 text-white py-10 px-6 flex flex-col items-center">
+      <div className="min-h-screen bg-gray-900 text-white py-10 px-6 flex flex-col items-center mt-16">
         {/* Header */}
         <h1 className="text-4xl font-bold text-center mb-8">Lebenslauf</h1>
   
