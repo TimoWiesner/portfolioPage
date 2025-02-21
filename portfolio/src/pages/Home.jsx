@@ -5,6 +5,7 @@ const projects = [
     { id: 2, title: "Project Two", description: "This is another placeholder project.", link: "#" },
     { id: 3, title: "Project Three", description: "More placeholder text.", link: "#" },
     { id: 4, title: "Project Four", description: "Yet another placeholder.", link: "#" },
+    { id: 5, title: "Project Four", description: "Yet another placeholder.", link: "#" },
   ];
 
 const Home = () => {

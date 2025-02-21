@@ -1,17 +1,40 @@
 import { useParams } from "react-router-dom";
+import anatomyHeart from "../assets/anatomy-heart.jpg";
+import cognitiveModel from "../assets/cognitive-model.jpg";
+import jobcenter from "../assets/jobcenterlübeck.png";
+import game_board from "../assets/game-board.jpg";
+import e_commerce from "../assets/e-commerce.png";
 
 const projects = {
   "1": {
-    title: "Project One",
+    title: "Trainieren eines UNets zur Segmentierung von Herzstrukturen",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent feugiat, justo in elementum venenatis.",
-    image: "https://via.placeholder.com/400",
+    image: anatomyHeart,
     github: "https://github.com/yourusername/project-one",
   },
   "2": {
-    title: "Project Two",
-    description: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantiumSed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantiumSed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantiumSed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantiumSed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantiumSed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantiumSed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantiumSed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium",
-    image: "https://via.placeholder.com/400",
+    title: "Entwicklung eines kognitiven Modells mit ACT-R",
+    description: "Sed ut perspiciatis unde omnis iste natus",
+    image: cognitiveModel,
     github: "https://github.com/yourusername/project-two",
+  },
+  "3": {
+    title: "Serious Game zur sozialen Notlage Arbeitslosigkeit",
+    description: "Sed ut perspiciatis unde omnis iste natus",
+    image: jobcenter,
+    github: "https://github.com/yourusername/project-two",
+  },
+  "4": {
+    title: "Brettspielrealisierung mit JavaFX Oberfläche",
+    description: "Sed ut perspiciatis unde omnis iste natus",
+    image: game_board,
+    github: "https://github.com/yourusername/project-two",
+  },
+  "5": {
+    title: "E-Commerce-Plattform mit Stripe und Content-Manager",
+    description: "Sed ut perspiciatis unde omnis iste natus",
+    image: e_commerce,
+    github: "none",
   },
 };
 
@@ -31,23 +54,24 @@ const Projects = () => {
       {/* Content Wrapper */}
       <div className="flex flex-col md:flex-row items-center max-w-4xl w-full bg-gray-800 p-6 rounded-lg shadow-lg">
         {/* Left Side: Image */}
-        <img src={project.image} alt={project.title} className="w-full md:w-1/2 rounded-lg shadow-md" />
-
+        <img src={project.image} alt={project.title} className="w-full md:w-1/2 rounded-lg shadow-md bg-white" />
+        
         {/* Right Side: Description */}
         <div className="md:w-1/2 md:ml-6 mt-6 md:mt-0">
           <p className="text-gray-300 text-lg">{project.description}</p>
         </div>
-      </div>
+        </div>
 
-      {/* GitHub Button */}
-      <a 
-        href={project.github} 
-        target="_blank" 
-        rel="noopener noreferrer" 
-        className="mt-6 px-6 py-3 bg-blue-500 text-white font-semibold rounded-md shadow-md hover:bg-blue-600 transition duration-300"
-      >
-        View on GitHub
-      </a>
+        {project.github !== "none" && (
+          <a 
+            href={project.github} 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="mt-6 px-6 py-3 bg-blue-500 text-white font-semibold rounded-md shadow-md hover:bg-blue-600 transition duration-300"
+          >
+            View on GitHub
+          </a>
+        )}
     </div>
   );
 };
