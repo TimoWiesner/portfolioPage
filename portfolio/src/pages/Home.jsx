@@ -14,8 +14,12 @@ const Home = () => {
           
           {/* Hero Section */}
           <div className="text-center mt-32">
-            <h1 className="text-5xl font-bold">Your Name</h1>
-            <p className="text-lg text-gray-300 mt-2">A passionate developer creating cool stuff.</p>
+            <h1 className="text-5xl font-bold">Timo Wiesner</h1>
+            <p className="text-lg text-gray-300 mt-2">Ich bin ein ehrgeiziger Informatik-Student, der gerne Probleme löst und auch mal kreative 
+Lösungsansätze probiert. Ich arbeite gut im Team und bin sozial sehr anpassungsfähig.  Ich liebe es neue 
+Perspektiven einzunehmen und mich in die Rolle Anderer hineinzuversetzen. Ich arbeite auch gerne mit 
+Leuten aus anderen Fachbereichen zusammen, denn so kann man oft neue Zusammenhänge erkennen 
+und gemeinsame Lösungsansätze finden. </p>
           </div>
     
           {/* Projects Section */}

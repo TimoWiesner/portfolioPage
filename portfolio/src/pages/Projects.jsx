@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 import anatomyHeart from "../assets/anatomy-heart.jpg";
-import cognitiveModel from "../assets/cognitive-model.jpg";
+import ai_head from "../assets/ai-head.png";
 import jobcenter from "../assets/jobcenterlübeck.png";
 import game_board from "../assets/game-board.jpg";
 import e_commerce from "../assets/e-commerce.png";
@@ -15,7 +15,7 @@ const projects = {
   "2": {
     title: "Entwicklung eines kognitiven Modells mit ACT-R",
     description: "Sed ut perspiciatis unde omnis iste natus",
-    image: cognitiveModel,
+    image: ai_head,
     github: "https://github.com/yourusername/project-two",
   },
   "3": {
