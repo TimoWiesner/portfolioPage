@@ -9,7 +9,7 @@ const projects = {
   },
   "2": {
     title: "Project Two",
-    description: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
+    description: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantiumSed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantiumSed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantiumSed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantiumSed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantiumSed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantiumSed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantiumSed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium",
     image: "https://via.placeholder.com/400",
     github: "https://github.com/yourusername/project-two",
   },
@@ -20,7 +20,7 @@ const Projects = () => {
   const project = projects[projectId];
 
   if (!project) {
-    return <div className="text-center text-white mt-20">Project not found.</div>;
+    return <div className="text-center text-black mt-20">Project not found.</div>;
   }
 
   return (

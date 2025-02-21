@@ -12,9 +12,9 @@ const Navbar = () => {
 
           {/* Desktop Menu */}
           <ul className="hidden md:flex space-x-6">
-            <li><a href="#about" className="hover:text-gray-400">About</a></li>
-            <li><a href="#projects" className="hover:text-gray-400">Projects</a></li>
-            <li><a href="#contact" className="hover:text-gray-400">Contact</a></li>
+            <li><a href="/" className="hover:text-gray-400">About</a></li>
+            <li><a href="/projects" className="hover:text-gray-400">Projects</a></li>
+            <li><a href="/contact" className="hover:text-gray-400">Contact</a></li>
           </ul>
 
           {/* Mobile Menu Button */}
@@ -29,9 +29,9 @@ const Navbar = () => {
         {/* Mobile Dropdown Menu */}
         {isOpen && (
           <ul className="md:hidden bg-gray-800 text-center py-4">
-            <li><a href="" className="block py-2" onClick={() => setIsOpen(false)}>About</a></li>
-            <li><a href="#projects" className="block py-2" onClick={() => setIsOpen(false)}>Projects</a></li>
-            <li><a href="#contact" className="block py-2" onClick={() => setIsOpen(false)}>Contact</a></li>
+            <li><a href="/" className="block py-2" onClick={() => setIsOpen(false)}>About</a></li>
+            <li><a href="/projects" className="block py-2" onClick={() => setIsOpen(false)}>Projects</a></li>
+            <li><a href="/contact" className="block py-2" onClick={() => setIsOpen(false)}>Contact</a></li>
           </ul>
         )}
       </div>
