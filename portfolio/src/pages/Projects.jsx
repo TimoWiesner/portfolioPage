@@ -1,4 +1,6 @@
 import { useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
+import { FaArrowCircleLeft, FaArrowCircleRight } from "react-icons/fa";
 import anatomyHeart from "../assets/anatomy-heart.jpg";
 import ai_head from "../assets/ai-head.png";
 import jobcenter from "../assets/jobcenterlübeck.png";
@@ -61,35 +63,51 @@ const Projects = () => {
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-gray-900 text-white px-6 mt-16">
-  {/* Title */}
-  <h1 className="text-4xl font-bold text-center mb-8">{project.title}</h1>
+      {/* Title */}
+      <h1 className="text-4xl font-bold text-center mb-8">{project.title}</h1>
 
-  {/* Content Wrapper */}
-  <div className="flex flex-col md:flex-row items-center max-w-4xl w-full bg-gray-800 p-6 rounded-lg shadow-lg">
-    
-    {/* Left Side: Image */}
-    <img src={project.image} alt={project.title} className="w-full md:w-1/2 rounded-lg shadow-md bg-white" />
-    
-    {/* Right Side: Description & Tech-Stack */}
-    <div className="md:w-1/2 md:ml-6 mt-6 md:mt-0">
-      {/* Project Description */}
-      <p className="text-gray-300 text-lg">{project.description}</p>
+      {/* Content Wrapper */}
+      <div className="flex flex-col md:flex-row items-center max-w-4xl w-full bg-gray-800 p-6 rounded-lg shadow-lg mb-20">
+        
+        {/* Left Side: Image */}
+        <img src={project.image} alt={project.title} className="w-full md:w-1/2 rounded-lg shadow-md bg-white" />
+        
+        {/* Right Side: Description & Tech-Stack */}
+        <div className="md:w-1/2 md:ml-6 mt-6 md:mt-0">
+          {/* Project Description */}
+          <p className="text-gray-300 text-lg">{project.description}</p>
 
-      {/* Tech-Stack unter der Beschreibung */}
-      <div className="mt-4">
-        <h3 className="text-gray-300 font-semibold">Skills:</h3>
-        <ul className="flex flex-wrap gap-2 mt-2">
-          {project.tech.map((tech, index) => (
-            <li key={index} className="bg-gray-700 px-3 py-1 rounded-md text-sm">
-              {tech}
-            </li>
-          ))}
-        </ul>
+          {/* Tech-Stack unter der Beschreibung */}
+          <div className="mt-4">
+            <h3 className="text-gray-300 font-semibold">Skills:</h3>
+            <ul className="flex flex-wrap gap-2 mt-2">
+              {project.tech.map((tech, index) => (
+                <li key={index} className="bg-gray-700 px-3 py-1 rounded-md text-sm">
+                  {tech}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+        
       </div>
-    </div>
-    
-  </div>
+      
 
+      <Link to={`/project/${projectId === "6" ? 1 :  parseInt(projectId) + 1}`}>
+        <button className="fixed bottom-6 right-6 bg-blue-500 text-white p-4 rounded-full shadow-lg hover:bg-blue-600 transition duration-300">
+          <FaArrowCircleRight className="text-xl" />
+        </button>
+      </Link>
+      
+
+      
+        <Link to={`/project/${projectId === "1" ? 6: parseInt(projectId) - 1}`}>
+          <button className="fixed bottom-6 left-6 bg-blue-500 text-white p-4 rounded-full shadow-lg hover:bg-blue-600 transition duration-300">
+            <FaArrowCircleLeft className="text-xl" />
+          </button>
+        </Link>
+      
+            
 
         {project.github !== "none" && (
           <a 
@@ -101,7 +119,13 @@ const Projects = () => {
             View on GitHub
           </a>
         )}
+
+      
+
     </div>
+
+
+
   );
 };
 
