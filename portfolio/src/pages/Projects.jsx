@@ -4,6 +4,7 @@ import ai_head from "../assets/ai-head.png";
 import jobcenter from "../assets/jobcenterlübeck.png";
 import game_board from "../assets/game-board.jpg";
 import e_commerce from "../assets/e-commerce.png";
+import image_segmentation from "../assets/image-segmentation.png";
 
 const projects = {
   "1": {
@@ -31,11 +32,17 @@ const projects = {
     github: "https://github.com/yourusername/project-two",
   },
   "5": {
-    title: "E-Commerce-Plattform mit Stripe und Content-Manager",
+    title: "E-Commerce-Website mit Stripe und Content-Manager",
     description: "Sed ut perspiciatis unde omnis iste natus",
     image: e_commerce,
     github: "none",
   },
+  "6": {
+    title: "Startup Bildsegmentierungs-App",
+    description: "Sed ut perspiciatis unde omnis iste natus",
+    image: image_segmentation,
+    github: "none"
+  }
 };
 
 const Projects = () => {
