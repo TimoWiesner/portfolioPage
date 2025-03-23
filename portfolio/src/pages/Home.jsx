@@ -12,7 +12,7 @@ const projects = [
 
 const Home = () => {
     return (
-        <div className="flex flex-col items-center justify-center min-h-screen bg-gray-900 text-white">
+        <div className="flex flex-col items-center justify-center min-h-screen bg-gray-900 text-white mt-16 mb">
             {/* Hero Wrapper */}
             <div className="flex flex-col md:flex-row items-center bg-gray-800 p-6 rounded-lg shadow-lg max-w-4xl w-full">
               
@@ -37,7 +37,7 @@ const Home = () => {
             </div>
     
           {/* Projects Section */}
-          <div className="mt-20 w-full max-w-4xl px-4">
+          <div className="mt-20 w-full max-w-4xl px-4 mb-16">
             <h2 className="text-3xl font-semibold text-center mb-6">Projekte</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {projects.map((project) => (
