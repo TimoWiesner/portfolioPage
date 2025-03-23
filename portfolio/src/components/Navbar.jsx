@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,9 +13,9 @@ const Navbar = () => {
 
           {/* Desktop Menu */}
           <ul className="hidden md:flex space-x-6">
-            <li><a href="/" className="hover:text-gray-400">Über mich</a></li>
-            <li><a href="/CV" className="hover:text-gray-400">Lebenslauf</a></li>
-            <li><a href="/contact" className="hover:text-gray-400">Kontakt</a></li>
+          <li><Link to="/" className="hover:text-gray-400">Über mich</Link></li>
+          <li><Link to="/CV" className="hover:text-gray-400">Lebenslauf</Link></li>
+          <li><Link to="/contact" className="hover:text-gray-400">Kontakt</Link></li>
           </ul>
 
           {/* Mobile Menu Button */}
@@ -29,9 +30,9 @@ const Navbar = () => {
         {/* Mobile Dropdown Menu */}
         {isOpen && (
           <ul className="md:hidden bg-gray-800 text-center py-4">
-            <li><a href="/" className="block py-2" onClick={() => setIsOpen(false)}>Über mich</a></li>
-            <li><a href="/CV" className="block py-2" onClick={() => setIsOpen(false)}>Lebenslauf</a></li>
-            <li><a href="/contact" className="block py-2" onClick={() => setIsOpen(false)}>Kontakt</a></li>
+            <li><Link to="/" className="block py-2" onClick={() => setIsOpen(false)}>Über mich</Link></li>
+            <li><Link to="/CV" className="block py-2" onClick={() => setIsOpen(false)}>Lebenslauf</Link></li>
+            <li><Link to="/contact" className="block py-2" onClick={() => setIsOpen(false)}>Kontakt</Link></li>
           </ul>
         )}
       </div>
