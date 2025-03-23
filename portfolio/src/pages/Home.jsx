@@ -6,7 +6,7 @@ const projects = [
     { id: 2, title: "Kognitive Modellierung", description: "Das Projekt zu meiner Bachelorarbeit.", link: "#" },
     { id: 3, title: "Serious Game", description: "Das Projekt zu meiner Tätigkeit als studentische Hilfskraft.", link: "#" },
     { id: 4, title: "Brettspiel Projekt", description: "Studentenprojekt zum Software Engineering Modul.", link: "#" },
-    { id: 5, title: "E-Commerce Website", description: "Privates Projekt bei dem ich mich tiefgreifender mit der Webentwicklung befasst habe.", link: "#" },
+    { id: 5, title: "E-Commerce Website", description: "Privates Projekt, bei dem ich mich tiefgreifender mit der Webentwicklung befasst habe.", link: "#" },
     { id: 6, title: "Bildsegmentierungs-App", description: "Startup Projekt in dem ich in der Entwicklung mitwirke.", link: "#" },
   ];
 
@@ -28,7 +28,7 @@ const Home = () => {
                 <h1 className="text-4xl font-bold">Timo Wiesner</h1>
                 <p className="text-lg text-gray-300 mt-2 max-w-lg">
                   Ich bin ein ehrgeiziger Informatik-Student, der gerne Probleme löst und auch mal kreative 
-                  Lösungsansätze probiert. Ich arbeite gut im Team und bin sozial anpassungsfähig. Ich liebe es neue
+                  Lösungsansätze probiert. Ich arbeite gut im Team und bin sozial anpassungsfähig. Ich liebe es, neue
                   Perspektiven einzunehmen und mich in die Rolle Anderer hineinzuversetzen. Ich arbeite auch gerne mit
                   Leuten aus anderen Fachbereichen zusammen, denn so kann man oft neue Zusammenhänge erkennen und gemeinsame Lösungsansätze finden. 
                 </p>

@@ -9,14 +9,14 @@ import image_segmentation from "../assets/image-segmentation.png";
 const projects = {
   "1": {
     title: "Trainieren eines UNets zur Segmentierung von Herzstrukturen",
-    description: "Innerhalb des Moduls Bachelorprojekt haben wir 2023 in einem kleinen Team ein nnUNet darauf trainiert eine Typ-B Aortendissektion durch Bildsegmentierung zu erkennen (TBAD-Dataset). Das übergeordnete Ziel war es hierbei das trainierte Modell anschließend auf dem Akida-Bainchip 2.0 laufen zu lassen. Das Trainieren des Modells hat sehr gut funktioniert, die Segmentierung lief mit einer Genauigkeit von 98%. Da das trainierte Modell jedoch größer war als erwartet, lief die Konvertierung und Inbetriebnahme auf dem Akida-Bainchip schwieriger als erwartet und konnte leider nicht erfolgreich beendet werden.",  
+    description: "Innerhalb des Moduls Bachelorprojekt haben wir 2023 in einem kleinen Team ein nnUNet darauf trainiert, eine Typ-B Aortendissektion durch Bildsegmentierung zu erkennen (TBAD-Dataset). Das übergeordnete Ziel war es hierbei, das trainierte Modell anschließend auf dem Akida-Bainchip 2.0 laufen zu lassen. Das Trainieren des Modells hat sehr gut funktioniert, die Segmentierung lief mit einer Genauigkeit von 98%. Da das trainierte Modell jedoch größer war als erwartet, lief die Konvertierung und Inbetriebnahme auf dem Akida-Bainchip schwieriger als erwartet und konnte leider nicht erfolgreich beendet werden.",  
     image: anatomyHeart,
     github: "none",
     tech: ["Python", "PyTorch", "Keras", "OpenCV", "Scikit-learn", "Numpy", "Onnx"]
   },
   "2": {
     title: "Entwicklung eines kognitiven Modells mit ACT-R",
-    description: "Dieses Projekt war Teil meiner Bachelorarbeit. Hier habe ich in zusammenarbeit mit einem Forscherteam der Technischen Universität Delft ein kognitives Modell (ACT-R) entwickelt, welches das menschliche Verhalten in einem Unterbrechungsszenario simulieren soll. Das Experiment wurde von der TU Delft entwickelt, dort sollten die Daten, die mein Modell hervorgebracht hat, dazu verwendet werden Robotervorschläge innerhalb des Experiments bezüglich des Zeitpunkts und der Qualität zu verbessern. Das Modell war erfolgreich darin, menschliches Verhalten mit minimalen abweichungen abzubidlden. Auf meiner Arbeit basierend habe ich gemeinsam mit dem Institut ein Paper verfasst und bei der ICCM eingereicht.", 
+    description: "Dieses Projekt war Teil meiner Bachelorarbeit. Hier habe ich in Zusammenarbeit mit einem Forscherteam der Technischen Universität Delft ein kognitives Modell (ACT-R) entwickelt, welches das menschliche Verhalten in einem Unterbrechungsszenario simulieren soll. Das Experiment wurde von der TU Delft entwickelt, dort sollten die Daten, die mein Modell hervorgebracht hat, dazu verwendet werden, Robotervorschläge innerhalb des Experiments bezüglich des Zeitpunkts und der Qualität zu verbessern. Das Modell war erfolgreich darin, menschliches Verhalten mit minimalen Abweichungen abzubilden. Auf meiner Arbeit basierend, habe ich gemeinsam mit dem Institut ein Paper verfasst und bei der ICCM eingereicht.", 
     image: ai_head,
     github: "none",
     tech: ["Lisp", "ACT-R", "Kognitive Modellierung", "Wissenschaftliches Arbeiten"]
