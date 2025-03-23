@@ -12,7 +12,7 @@ const Contact = () => {
   
         {/* Kontakt-Button */}
         <a 
-          href="mailto:timow2001@live.de"
+          href="mailto:business@timowiesner.de"
           className="px-6 py-3 bg-blue-500 text-white font-semibold rounded-md shadow-md hover:bg-blue-600 transition duration-300"
         >
           📧 E-Mail senden

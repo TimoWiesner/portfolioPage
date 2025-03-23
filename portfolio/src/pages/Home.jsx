@@ -55,7 +55,7 @@ const Home = () => {
     
           {/* Contact Section (Sticky at the bottom) */}
           <div class="w-full bg-gray-800 py-4 mt-16 fixed bottom-0 text-center">
-            <p>📧 Kontakt: timow2001@live.de</p>
+            <p>📧 Kontakt: buisness@timowiesner.de</p>
           </div>
         </div>
       );
