@@ -2,12 +2,12 @@ import { Link } from "react-router-dom";
 import timo_wiesner from "../assets/timo-wiesner.png";
 
 const projects = [
-    { id: 1, title: "CT Bildsegmentierung", description: "This is a placeholder project.", link: "#" },
-    { id: 2, title: "Kognitive Modellierung", description: "This is another placeholder project.", link: "#" },
-    { id: 3, title: "Serious Game", description: "More placeholder text.", link: "#" },
-    { id: 4, title: "Brettspiel Projekt", description: "Yet another placeholder.", link: "#" },
-    { id: 5, title: "E-Commerce Website", description: "Yet another placeholder.", link: "#" },
-    { id: 6, title: "Bildsegmentierungs-App", description: "Yet another placeholder.", link: "#" },
+    { id: 1, title: "CT Bildsegmentierung", description: "Ein Projekt, bei dem ein UNet auf die Segmentierung von CT-Bildern trainiert wurde.", link: "#" },
+    { id: 2, title: "Kognitive Modellierung", description: "Das Projekt zu meiner Bachelorarbeit.", link: "#" },
+    { id: 3, title: "Serious Game", description: "Das Projekt zu meiner Tätigkeit als studentische Hilfskraft.", link: "#" },
+    { id: 4, title: "Brettspiel Projekt", description: "Studentenprojekt zum Software Engineering Modul.", link: "#" },
+    { id: 5, title: "E-Commerce Website", description: "Privates Projekt bei dem ich mich tiefgreifender mit der Webentwicklung befasst habe.", link: "#" },
+    { id: 6, title: "Bildsegmentierungs-App", description: "Startup Projekt in dem ich in der Entwicklung mitwirke.", link: "#" },
   ];
 
 const Home = () => {
@@ -28,9 +28,9 @@ const Home = () => {
                 <h1 className="text-4xl font-bold">Timo Wiesner</h1>
                 <p className="text-lg text-gray-300 mt-2 max-w-lg">
                   Ich bin ein ehrgeiziger Informatik-Student, der gerne Probleme löst und auch mal kreative 
-                  Lösungsansätze probiert. Ich arbeite gut im Team und bin sozial anpassungsfähig. 
-                  Ich liebe es, neue Perspektiven einzunehmen und mit anderen Fachbereichen zusammenzuarbeiten, 
-                  um innovative Lösungen zu finden.
+                  Lösungsansätze probiert. Ich arbeite gut im Team und bin sozial anpassungsfähig. Ich liebe es neue
+                  Perspektiven einzunehmen und mich in die Rolle Anderer hineinzuversetzen. Ich arbeite auch gerne mit
+                  Leuten aus anderen Fachbereichen zusammen, denn so kann man oft neue Zusammenhänge erkennen und gemeinsame Lösungsansätze finden. 
                 </p>
               </div>
 
@@ -55,7 +55,7 @@ const Home = () => {
     
           {/* Contact Section (Sticky at the bottom) */}
           <div class="w-full bg-gray-800 py-4 mt-16 fixed bottom-0 text-center">
-            <p>📧 Kontakt: your.email@example.com</p>
+            <p>📧 Kontakt: timow2001@live.de</p>
           </div>
         </div>
       );
