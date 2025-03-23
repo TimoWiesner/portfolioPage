@@ -12,7 +12,7 @@ const projects = [
 
 const Home = () => {
     return (
-        <div className="flex flex-col items-center justify-center min-h-screen bg-gray-900 text-white mt-16 mb">
+        <div className="flex flex-col items-center justify-center min-h-screen bg-gray-900 text-white mt-16">
             {/* Hero Wrapper */}
             <div className="flex flex-col md:flex-row items-center bg-gray-800 p-6 rounded-lg shadow-lg max-w-4xl w-full">
               
