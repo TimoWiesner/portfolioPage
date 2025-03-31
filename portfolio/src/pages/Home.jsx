@@ -7,7 +7,7 @@ const projects = [
     { id: 3, title: "Serious Game", description: "Das Projekt zu meiner Tätigkeit als studentische Hilfskraft.", link: "#" },
     { id: 4, title: "Brettspiel Projekt", description: "Studentenprojekt zum Software Engineering Modul.", link: "#" },
     { id: 5, title: "E-Commerce Website", description: "Privates Projekt, bei dem ich mich tiefgreifender mit der Webentwicklung befasst habe.", link: "#" },
-    { id: 6, title: "Bildsegmentierungs-App", description: "Startup Projekt in dem ich in der Entwicklung mitwirke.", link: "#" },
+    { id: 6, title: "Bildsegmentierungs-App", description: "Startup Projekt, in dem ich in der Entwicklung mitwirke.", link: "#" },
   ];
 
 const Home = () => {
@@ -55,7 +55,7 @@ const Home = () => {
     
           {/* Contact Section (Sticky at the bottom) */}
           <div class="w-full bg-gray-800 py-4 mt-16 fixed bottom-0 text-center">
-            <p>📧 Kontakt: buisness@timowiesner.de</p>
+            <p>📧 Kontakt: business@timowiesner.de</p>
           </div>
         </div>
       );
